@@ -2645,7 +2645,7 @@ a.more-btn {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center center center;
-    padding: 130px 0;
+    padding: 100px 0;
 }
 
 
@@ -2660,7 +2660,7 @@ a.more-btn {
     transition: 0.5s;
 }
 
-.portfolio-card-tabs .nav-link:hover, .portfolio-card-tabs .actives {
+.portfolio-card-tabs .nav-link.active {
     background: #D00000 !important;
     color: #fff !important;
 }
@@ -2741,7 +2741,17 @@ a.more-btn {
     color: #fff;
 }
 
+.portfolio-cards-item {
+    margin-top: 30px !important;
+}
 
+.portfolio-text {
+    padding-bottom: 20px;
+}
+
+.porfolio-all-tab-btn {
+    margin-top: 30px;
+}
 
 
 
