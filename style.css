@@ -174,16 +174,26 @@ a {
     height: 150px;
     padding-top: 30px;
     position: relative;
+    z-index: 10;
 }
 
-/* .quick-service-card .link {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
+.quick-service-card img, h5 {
     z-index: 1;
-} */
+}
+
+.quick-service-border-circle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #000;
+    right: -15%;
+    top: 50%;
+    z-index: -1;
+}
+
+
+
 
 .quick-service-card h5 {
     font-weight: 700;
@@ -354,6 +364,8 @@ a.more-btn {
 .service-section {
     width: 100%;
     background-size: cover;
+    padding-bottom: 50px;
+    z-index: -10;
 }
 
 .service-head {
@@ -371,6 +383,83 @@ a.more-btn {
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.08);
     margin: 20px 0 0 0;
     padding: 30px 0 18px 20px;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.service-card img, h4 {
+    z-index: 1;
+}
+
+.service-border-circle-top {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: transparent;
+    top: -20%;
+    left: -20%;
+    border-radius: 50%;
+}
+
+.service-border-circle-top-1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: conic-gradient(#fff 0deg, #fff 200deg, #FB7F7F 160deg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.6s;
+    z-index: -1;
+}
+
+.service-border-circle-top-2 {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.service-card:hover .service-border-circle-top-1 {
+    transform: rotate(-160deg);
+}
+
+.service-border-circle {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: #fff;
+    top: 50%;
+    right: -20%;
+    border-radius: 50%;
+}
+
+.service-border-circle-1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: conic-gradient(#FB7F7F 0deg, #FB7F7F 220deg, #fff 140deg);
+    border-radius: 50%;
+    transform: rotate(20deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.6s;
+}
+
+.service-border-circle-2 {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.service-card:hover .service-border-circle-1 {
+    transform: rotate(-160deg);
 }
 
 .service-card img {
@@ -2799,8 +2888,6 @@ a.more-btn {
     }
 }
 
-
-
 /* Portfolio Card End */
 
 
@@ -2809,12 +2896,3 @@ a.more-btn {
 
 
 
-
-
-
-
-
-
-
-
-/* Portfolio Card End */
