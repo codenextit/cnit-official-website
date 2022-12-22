@@ -174,11 +174,7 @@ a {
     height: 150px;
     padding-top: 30px;
     position: relative;
-    z-index: 10;
-}
-
-.quick-service-card img, h5 {
-    z-index: 1;
+    overflow: hidden;
 }
 
 .quick-service-border-circle {
@@ -186,14 +182,26 @@ a {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background: #000;
-    right: -15%;
-    top: 50%;
-    z-index: -1;
+    background: #fff;
+    right: -22%;
+    top: 60%;
 }
 
+.quick-service-border-circle-1 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: conic-gradient(#fff 0deg, #fff 180deg, #FB7F7F 180deg);
+    top: 0;
+    left: 0;
+    transform: rotate(190deg);
+    transition: 0.6s;
+}
 
-
+.quick-service-card:hover .quick-service-border-circle-1 {
+    transform: rotate(0deg);
+}
 
 .quick-service-card h5 {
     font-weight: 700;
@@ -2661,7 +2669,7 @@ a.more-btn {
 }
 
 .portfolio-hero-btn:hover span:nth-child(1) {
-    top: 0;
+    top: 0px;
     left: 0;
 }
 
