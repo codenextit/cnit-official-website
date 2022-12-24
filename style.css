@@ -1891,6 +1891,13 @@ a.more-btn {
     width: 100%;
 }
 
+@media screen and (min-width: 1800px) {
+    .cnit-logo-img img {
+        right: 20%;
+        top: 6%;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .about-hero-content .about-hero-title {
         font-size: 2.8em;
@@ -2030,7 +2037,7 @@ a.more-btn {
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
     box-shadow: 7px 7px 25px rgba(0, 0, 0, 0.1);
-    margin: 10px;
+    margin: 5px;
 }
 
 .teams-image {
@@ -2050,7 +2057,7 @@ a.more-btn {
 }
 
 .teams-text h3 {
-    font-family: var(--text-font);
+    font-family: var(--header-font);
     font-size: 1.5em;
     font-weight: 700;
     color: #D00000;
@@ -2390,8 +2397,10 @@ a.more-btn {
 }
 
 .main-contact-form input {
-    margin: 5px 0;
+    margin: 8px 0;
     border: 1px solid #000 !important;
+    height: 50px;
+    font-size: 1.1em;
 }
 
 .main-contact-form input:focus,
@@ -2407,8 +2416,8 @@ a.more-btn {
 }
 
 .main-contact-form textarea {
-    margin: 5px 0;
-    height: 70px;
+    margin: 8px 0;
+    height: 100px;
     resize: none;
     border: 1px solid #000 !important;
 }
@@ -2445,7 +2454,7 @@ a.more-btn {
     background: #DD0000;
     transition: 0.4s;
     z-index: -1;
-    opacity: 0.3;
+    opacity: 0.6;
 }
 
 .contact-form-btn a span:nth-child(1) {
@@ -2748,7 +2757,6 @@ a.more-btn {
     background-position: center center center center;
     padding: 100px 0;
 }
-
 
 .portfolio-card-tabs .nav-link {
     background-color: #fff !important;
