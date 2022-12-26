@@ -65,6 +65,14 @@ a {
     margin-left: 10px;
 }
 
+.navbar-nav .nav-item .nav-link {
+    transition: 0.5s;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #DD0000;
+}
+
 .navbar-nav .nav-item .nav-link.active {
     color: #DD0000;
 }
@@ -2085,8 +2093,8 @@ a.more-btn {
 }
 
 .teams-social a:hover {
-    color: rgba(0, 0, 0, 0.3);
-    transform: translateY(-5px);
+    color: rgb(0, 132, 202);
+    transform: translateY(-5px) scale(1.1);
 }
 
 
