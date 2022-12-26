@@ -2052,6 +2052,7 @@ a.more-btn {
 }
 
 .teams-text {
+    
     text-align: center;
     padding-top: 20px;
 }
@@ -2065,7 +2066,7 @@ a.more-btn {
 }
 
 .teams-text p {
-    font-family: var(--text-font);
+    font-family: var(--header-font);
     font-size: 1em;
     font-weight: 600;
 }
