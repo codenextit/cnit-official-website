@@ -2048,7 +2048,6 @@ a.more-btn {
 }
 
 .teams-text {
-    
     text-align: center;
     padding-top: 20px;
 }
@@ -2778,6 +2777,7 @@ a.more-btn {
     box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
     position: relative;
     margin: 10px;
+    overflow: hidden;
 }
 
 .portfolio-card-list img {
