@@ -2048,7 +2048,6 @@ a.more-btn {
 }
 
 .teams-text {
-    
     text-align: center;
     padding-top: 20px;
 }
@@ -2778,6 +2777,7 @@ a.more-btn {
     box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
     position: relative;
     margin: 10px;
+    overflow: hidden;
 }
 
 .portfolio-card-list img {
@@ -2815,7 +2815,7 @@ a.more-btn {
     height: 100%;
 }
 
-.portfolio-card-list:hover.portfolio-card-list img {
+.portfolio-card-list:hover.portfolio-card-list .portfolio-card-list-img {
     transform: scale(1.1);
 }
 
@@ -2835,8 +2835,12 @@ a.more-btn {
     background: #D00000;
 }
 
-.portfolio-card-list-btn a:nth-child(2) {
-    background: #000;
+/* .portfolio-card-list-btn a:nth-child(2) {
+    background: #000 !important;
+} */
+
+.portfolio-card-view-btn {
+    background: #000 !important;
 }
 
 .portfolio-card-list-btn a:nth-child(1):hover {
@@ -2844,7 +2848,7 @@ a.more-btn {
     color: #fff;
 }
 
-.portfolio-card-list-btn a:nth-child(2):hover {
+.portfolio-card-view-btn:hover {
     background: #454545;
     color: #fff;
 }
@@ -2859,6 +2863,10 @@ a.more-btn {
 
 .porfolio-all-tab-btn {
     margin-top: 30px;
+}
+
+.modal-body img {
+    width: 100%;
 }
 
 
