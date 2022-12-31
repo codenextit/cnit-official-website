@@ -183,6 +183,7 @@ a {
     padding-top: 30px;
     position: relative;
     overflow: hidden;
+    z-index: 1;
 }
 
 .quick-service-border-circle {
@@ -191,8 +192,9 @@ a {
     height: 100px;
     border-radius: 50%;
     background: #fff;
-    right: -22%;
+    left: 80%;
     top: 60%;
+    z-index: -1;
 }
 
 .quick-service-border-circle-1 {
@@ -203,7 +205,7 @@ a {
     background: conic-gradient(#fff 0deg, #fff 180deg, #FB7F7F 180deg);
     top: 0;
     left: 0;
-    transform: rotate(190deg);
+    transform: rotate(180deg);
     transition: 0.6s;
 }
 
@@ -243,6 +245,30 @@ a {
         margin-top: -120px;
     }
 
+}
+
+@media screen and (max-width: 990px) {
+    .quick-service-border-circle {
+        left: 93%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .quick-service-border-circle {
+        left: 91%;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .quick-service-border-circle {
+        left: 89%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .quick-service-border-circle {
+        left: 87%;
+    }
 }
 
 /* Quick Services Section */
@@ -505,6 +531,37 @@ a.more-btn {
     background: linear-gradient(328.36deg, #FB7F7F 1.82%, #DD0000 85.48%);
     box-shadow: 0px 10px 15px rgba(82, 113, 255, 0.2);
     border-radius: 10px;
+}
+
+
+@media screen and (max-width: 1400px) {
+    .service-border-circle {
+        right: -22%;
+    }
+
+    .service-border-circle-top {
+        left: -22%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .service-border-circle {
+        right: -25%;
+    }
+
+    .service-border-circle-top {
+        left: -25%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .service-border-circle {
+        right: -20%;
+    }
+
+    .service-border-circle-top {
+        left: -20%;
+    }
 }
 
 /* Services Section */
