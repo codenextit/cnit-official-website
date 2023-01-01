@@ -2872,7 +2872,7 @@ a.more-btn {
     height: 100%;
 }
 
-.portfolio-card-list:hover.portfolio-card-list .portfolio-card-list-img {
+.portfolio-card-list:hover.portfolio-card-list .portfolio-card-img {
     transform: scale(1.1);
 }
 
@@ -2963,6 +2963,20 @@ a.more-btn {
 
     .portfolio-card-list {
         padding: 25px;
+    }
+}
+
+@media screen and (max-width: 476px) {
+    .portfolio-card-tabs .nav-link {
+        padding: 5px 20px !important;
+        font-size: .9em !important;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .portfolio-card-tabs .nav-link {
+        padding: 5px 13px !important;
+        font-size: .9em !important;
     }
 }
 
