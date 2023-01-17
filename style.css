@@ -2909,6 +2909,10 @@ h4 {
   width: 100%;
 }
 
+.graphics-logo-header h3 {
+  background-color: aqua;
+}
+
 @media screen and (max-width: 1200px) {
   .portfolio-card-tabs .nav-link {
     padding: 6px 25px !important;
