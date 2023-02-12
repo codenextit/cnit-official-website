@@ -79,7 +79,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#our-works">আমাদের কাজসমূহ</a>
+              <a class="nav-link" href="./portfolio.html">আমাদের কাজসমূহ</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./web-hosting.html">ওয়েব হোস্টিং</a>
@@ -154,51 +154,58 @@
         <div class="row justify-content-center">
           <div class="col-md-6">
             <div class="main-contact-form">
-              <form action="#">
+              <form method="post" name="submit-to-google-sheet">
                 <input
                   type="text"
-                  name="Name"
-                  id="Name"
+                  name="name"
+                  id="new-task"
                   placeholder="আপনার নাম"
                   class="form-control"
+                  aria-autocomplete="list"
                 />
                 <div class="row">
                   <div class="col-md-6">
                     <input
                       type="email"
-                      name="Email"
-                      id="Email"
+                      name="email"
+                      id="new-task"
                       placeholder="ই-মেইল"
                       class="form-control"
+                      aria-autocomplete="list"
                     />
                   </div>
                   <div class="col-md-6">
                     <input
                       type="number"
-                      name="Number"
-                      id="Number"
+                      name="number"
+                      id="new-task"
                       placeholder="মোবাইল"
                       class="form-control"
+                      aria-autocomplete="list"
                     />
                   </div>
                 </div>
                 <textarea
-                  name="Massege"
-                  id="Massege"
+                  name="message"
+                  id="new-task"
                   cols="30"
                   placeholder="বিস্তারিত..."
                   class="form-control"
                 ></textarea>
+                <div class="contact-form-btn">
+                  <button
+                    type="submit"
+                    class="cnt-frm-btn"
+                    id="contact-form-btn"
+                  >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    সাবমিট
+                  </button>
+                </div>
               </form>
-              <div class="contact-form-btn">
-                <a href="#">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  সাবমিট
-                </a>
-              </div>
             </div>
           </div>
         </div>
@@ -219,7 +226,7 @@
                 প্রোডাক্ট ও শক্তিশালী পোর্টফলিও...
               </p>
               <div class="quick-info-btn d-flex">
-                <a href="#" class="m-auto">
+                <a href="#footer-contact" class="m-auto">
                   <span></span>
                   <span></span>
                   <span></span>
@@ -241,7 +248,7 @@
                 প্রোডাক্ট ও শক্তিশালী পোর্টফলিও...
               </p>
               <div class="quick-info-btn d-flex">
-                <a href="./cnit-hosting-landing.html" class="m-auto">
+                <a href="./web-hosting.html" class="m-auto">
                   <span></span>
                   <span></span>
                   <span></span>
@@ -371,6 +378,19 @@
     <!-- Copyright Footer Section Start -->
 
     <!-- Custom Js -->
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbz0m7y9Ei1ptYHvcFKPUHMPSKbUZJ48PODsEjoKA6tOnHXnaiddbOpSs-PgLFfU9m9lFQ/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
     <script src="./js/customer-logo-carousel.js"></script>
     <script src="./js/all.js"></script>
     <!-- Custom Js -->

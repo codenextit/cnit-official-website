@@ -2468,12 +2468,13 @@ h4 {
   margin-top: 20px;
 }
 
-.contact-form-btn a {
+.contact-form-btn .cnt-frm-btn {
   position: relative;
   padding: 8px 40px;
   text-align: center;
   border: 2px solid #dd0000;
   text-decoration: none;
+  background-color: transparent;
   font-family: var(--header-font);
   color: #dd0000;
   font-weight: 700;
@@ -2485,11 +2486,11 @@ h4 {
   display: inline-block;
 }
 
-.contact-form-btn a:hover {
+.contact-form-btn .cnt-frm-btn:hover {
   color: #fff;
 }
 
-.contact-form-btn a span {
+.contact-form-btn .cnt-frm-btn span {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -2499,37 +2500,37 @@ h4 {
   opacity: 0.6;
 }
 
-.contact-form-btn a span:nth-child(1) {
+.contact-form-btn .cnt-frm-btn span:nth-child(1) {
   top: -100%;
   left: -100%;
 }
 
-.contact-form-btn a:hover span:nth-child(1) {
+.contact-form-btn .cnt-frm-btn:hover span:nth-child(1) {
   top: 0;
   left: 0;
 }
 
-.contact-form-btn a span:nth-child(2) {
+.contact-form-btn .cnt-frm-btn span:nth-child(2) {
   bottom: -100%;
   left: -100%;
 }
 
-.contact-form-btn a:hover span:nth-child(2) {
+.contact-form-btn .cnt-frm-btn:hover span:nth-child(2) {
   bottom: 0;
   left: 0;
 }
 
-.contact-form-btn a span:nth-child(3) {
+.contact-form-btn .cnt-frm-btn span:nth-child(3) {
   top: -100%;
   right: -100%;
 }
 
-.contact-form-btn a:hover span:nth-child(3) {
+.contact-form-btn .cnt-frm-btn:hover span:nth-child(3) {
   top: 0;
   right: 0;
 }
 
-.contact-form-btn a span:nth-child(4) {
+.contact-form-btn .cnt-frm-btn span:nth-child(4) {
   bottom: -100%;
   right: -100%;
 }
@@ -2787,10 +2788,7 @@ h4 {
 
 #portfolio-card {
   width: 100%;
-  background: url(./img/portfolio/portfolio-card-bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center center center;
+  background: rgba(251, 127, 127, 0.2);
   padding: 100px 0;
 }
 
@@ -2813,8 +2811,8 @@ h4 {
 .portfolio-card-list {
   background: #f3f3f3;
   border-radius: 8px;
-  padding: 20px;
-  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+  padding: 20px 0 20px 0;
+  box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.1);
   position: relative;
   margin: 10px;
   overflow: hidden;
@@ -2825,14 +2823,15 @@ h4 {
   transition: 0.5s;
   display: block;
   margin: auto;
+  padding: 0 20px;
 }
 
 .portfolio-card-list p {
   text-align: center;
   font-family: var(--text-font);
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: 700;
-  padding-top: 20px;
+  padding: 20px 5px 0 5px;
   margin: 0;
 }
 
@@ -2909,8 +2908,28 @@ h4 {
   width: 100%;
 }
 
-.graphics-logo-header h3 {
-  background-color: aqua;
+.graphics-category-header h3 {
+  background-color: #dd0000;
+  color: #fff;
+  display: inline-block;
+  font-size: 1.3em;
+  padding: 6px 100px;
+  margin: 30px 0 0 10px;
+  font-family: var(--header-font);
+  position: relative;
+}
+
+.graphics-category-header h3::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 100%;
+  left: 102%;
+  background-color: #000;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -2922,6 +2941,10 @@ h4 {
   .portfolio-card-list-btn a {
     font-size: 1em;
     padding: 8px 15px;
+  }
+
+  .portfolio-card-list p {
+    font-size: 0.9em;
   }
 }
 
