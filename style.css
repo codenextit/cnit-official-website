@@ -480,6 +480,7 @@ h4 {
   top: 50%;
   right: -20%;
   border-radius: 50%;
+  z-index: -1;
 }
 
 .service-border-circle-1 {
@@ -493,6 +494,7 @@ h4 {
   align-items: center;
   justify-content: center;
   transition: 0.6s;
+  z-index: -1;
 }
 
 .service-border-circle-2 {
@@ -752,6 +754,7 @@ h4 {
 }
 
 .work-process-card p {
+  font-size: 0.9em;
   font-weight: 500;
 }
 
