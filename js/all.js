@@ -43,3 +43,38 @@ $(document).ready(function () {
     }]
   });
 });
+
+
+
+
+/*
+The default country is US and the default site is google.com
+The code below is placed on the default site. The other site where you want to send visitors from the rest of the world is google.co.uk
+*/
+var defaultCountry = "BD";
+var defaultSite = "http://127.0.0.1:5500/index.html";
+var otherSite = "http://127.0.0.1:5500/index-en.html";
+fetch("https://ipapi.co/country/")
+ .then(response => {
+   if (response.ok) {
+     return response.text();
+   } else {
+     throw new Error ('New error message', { statusCode: 404 });
+   }
+ })
+ .then(country => {
+   if (country == defaultCountry) {
+     // No action needed - already on the default site
+     console.log("Already on default site");
+   } else {
+     // Redirect rest of the world
+     console.log("Redirecting to country specific website");
+     window.location = otherSite;
+   }
+ })
+ .catch(function(error) {
+   // Network error
+   // Script blocked by browser extension
+   // 429 error (too many requests)
+   console.log(error);
+ });
